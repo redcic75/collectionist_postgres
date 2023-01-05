@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: 'shops#index'
   get 'shops', to: 'shops#index'
-  get 'shops/:id', to: 'shops#show'
+  get 'shops/:id', to: 'shops#show', as: :shop
 end
