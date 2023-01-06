@@ -1,13 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  shop: one
-  weekday_int: 1
-  start_time_seconds: 1
-  end_time_seconds: 1
+range1:
+  shop: shop1
+  weekday_int: 2
+  start_time_seconds: 21600
+  end_time_seconds: 43200
 
-two:
-  shop: two
-  weekday_int: 1
-  start_time_seconds: 1
-  end_time_seconds: 1
+range2:
+  shop: shop1
+  weekday_int: 3
+  start_time_seconds: 32400
+  end_time_seconds: 43200
+
+range3:
+  shop: shop1
+  weekday_int: 3
+  start_time_seconds: 52200
+  end_time_seconds: 64800
