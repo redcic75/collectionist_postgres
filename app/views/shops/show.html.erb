@@ -9,7 +9,7 @@
         <%= 'Horaires :' if index == current_wday %>
       </th>
       <td>
-        <%= wday %>
+        <%= t("day#{wday}") %>
       </td>
       <td>
         <% day_openings.each_with_index do |day_opening, index| %>
