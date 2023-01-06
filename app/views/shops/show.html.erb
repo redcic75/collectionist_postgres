@@ -1,4 +1,4 @@
-<h1>Shop "<%= @shop.name %>"</h1>
+<h1><%= @shop.name %></h1>
 <% current_wday = Time.now.utc.wday %>
 <table>
   <% (current_wday..current_wday + 6).each do |index| %>
@@ -6,7 +6,7 @@
     <% day_openings = @week_openings[wday] %>
     <tr class="<%= 'bold' if index == current_wday %>">
       <th>
-        <%= 'Horaires :' if index == current_wday %>
+        <%= t('schedule') if index == current_wday %>
       </th>
       <td>
         <%= t("day#{wday}") %>
@@ -25,4 +25,4 @@
   <% end %>
 </table>
 
-<%= link_to 'Back', shops_path %>
+<%= link_to t('back'), shops_path %>

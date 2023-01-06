@@ -7,3 +7,6 @@ fr:
   day5: "vendredi"
   day6: "samedi"
   closed: "Fermé"
+  shops: "Liste des magasins"
+  schedule: "Horaires :"
+  back: "Retour"
