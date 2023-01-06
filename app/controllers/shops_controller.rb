@@ -5,5 +5,6 @@ class ShopsController < ApplicationController
 
   def show
     @shop = Shop.find(params[:id])
+    @week_openings = @shop.week_openings
   end
 end

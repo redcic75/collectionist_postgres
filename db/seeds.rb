@@ -16,7 +16,7 @@ puts 'Creating opening ranges...'
 OpeningRange.create!(
   shop: bakery,
   weekday_int: 2,
-  start_time_seconds: 32_400,
+  start_time_seconds: 21_600,
   end_time_seconds: 43_200
 )
 

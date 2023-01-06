@@ -1,2 +1,24 @@
 <h1>Shop <%= @shop.name %></h1>
+<% current_wday = Time.now.utc.wday %>
+<table>
+  <% (current_wday..current_wday + 6).each do |index| %>
+    <% wday = index % 7 %>
+    <% day_openings = @week_openings[wday] %>
+    <tr class="<%= 'bold' if index == current_wday %>">
+      <th>
+        <%= 'Horaires :' if index == current_wday %>
+      </th>
+      <td>
+        <%= wday %>
+      </td>
+      <td>
+        <% day_openings.each_with_index do |day_opening, index| %>
+          <% separator = index == day_openings.size - 1 ? '': ',' %>
+          <%= "#{format_range(day_opening)}#{separator}" %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
 <%= link_to 'Back', shops_path %>
