@@ -1,4 +1,7 @@
 <h1><%= @shop.name %></h1>
+<%# current_wday represents the current day of the week.
+current_wday belongs to (0..6)
+0 for sunday, 1 for  monday... 6 for saturday  %>
 <% current_wday = Time.now.utc.wday %>
 <table>
   <% (current_wday..current_wday + 6).each do |index| %>
@@ -16,7 +19,7 @@
           <%= t("closed") %>
         <% else %>
           <% day_openings.each_with_index do |day_opening, index| %>
-            <% separator = index == day_openings.size - 1 ? '': ',' %>
+            <% separator = index == day_openings.size - 1 ? '' : ',' %>
             <%= "#{format_range(day_opening)}#{separator}" %>
           <% end %>
         <% end %>
