@@ -34,4 +34,81 @@ OpeningRange.create!(
   end_time_seconds: 64_800
 )
 
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 1,
+  start_time_seconds: 37_800,
+  end_time_seconds: 54_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 1,
+  start_time_seconds: 61_200,
+  end_time_seconds: 72_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 2,
+  start_time_seconds: 37_800,
+  end_time_seconds: 54_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 2,
+  start_time_seconds: 61_200,
+  end_time_seconds: 72_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 3,
+  start_time_seconds: 37_800,
+  end_time_seconds: 54_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 3,
+  start_time_seconds: 61_200,
+  end_time_seconds: 72_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 4,
+  start_time_seconds: 37_800,
+  end_time_seconds: 54_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 4,
+  start_time_seconds: 61_200,
+  end_time_seconds: 72_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 5,
+  start_time_seconds: 37_800,
+  end_time_seconds: 54_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 5,
+  start_time_seconds: 61_200,
+  end_time_seconds: 72_000
+)
+
+OpeningRange.create!(
+  shop: butcher,
+  weekday_int: 6,
+  start_time_seconds: 37_800,
+  end_time_seconds: 72_000
+)
+
 puts 'Seed finished'
