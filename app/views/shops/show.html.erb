@@ -1,4 +1,4 @@
-<h1>Shop <%= @shop.name %></h1>
+<h1>Shop "<%= @shop.name %>"</h1>
 <% current_wday = Time.now.utc.wday %>
 <table>
   <% (current_wday..current_wday + 6).each do |index| %>
