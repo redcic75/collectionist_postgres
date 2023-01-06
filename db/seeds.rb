@@ -9,12 +9,29 @@ puts 'Cleansing database...'
 Shop.destroy_all
 
 puts 'Creating shops...'
-bakery = { name: 'My little bread' }
-butcher = { name: 'Super beef' }
+bakery = Shop.create!(name: 'My little bread')
+butcher = Shop.create!(name: 'Super beef')
 
-[bakery, butcher].each do |attributes|
-  shop = Shop.create!(attributes)
-  puts "Created #{shop.name}"
-end
+puts 'Creating opening ranges...'
+OpeningRange.create!(
+  shop: bakery,
+  weekday_int: 2,
+  start_time_seconds: 32_400,
+  end_time_seconds: 43_200
+)
+
+OpeningRange.create!(
+  shop: bakery,
+  weekday_int: 3,
+  start_time_seconds: 32_400,
+  end_time_seconds: 43_200
+)
+
+OpeningRange.create!(
+  shop: bakery,
+  weekday_int: 3,
+  start_time_seconds: 52_200,
+  end_time_seconds: 64_800
+)
 
 puts 'Seed finished'
