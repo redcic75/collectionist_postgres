@@ -12,9 +12,13 @@
         <%= t("day#{wday}") %>
       </td>
       <td>
-        <% day_openings.each_with_index do |day_opening, index| %>
-          <% separator = index == day_openings.size - 1 ? '': ',' %>
-          <%= "#{format_range(day_opening)}#{separator}" %>
+        <% if day_openings.size == 0 %>
+          <%= t("closed") %>
+        <% else %>
+          <% day_openings.each_with_index do |day_opening, index| %>
+            <% separator = index == day_openings.size - 1 ? '': ',' %>
+            <%= "#{format_range(day_opening)}#{separator}" %>
+          <% end %>
         <% end %>
       </td>
     </tr>
