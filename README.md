@@ -20,8 +20,8 @@ After initialization:
 ### Launch tests
 After initialization:
 - cd in the app's repo
-- Run "rails test:models" to test the models
-- Run "rails test:controllers" to test the controllers
+- Run `rails test:models` to test the models
+- Run `rails test:controllers` to test the controllers
 
 ## Developers' notes - Limitations / Foreseen improvements
 - `opening_range` model has limitations like:

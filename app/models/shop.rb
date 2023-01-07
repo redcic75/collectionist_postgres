@@ -11,7 +11,8 @@ class Shop < ApplicationRecord
     output = Array.new(7) { [] }
     (0..6).each do |wday|
       ranges = opening_ranges.where('weekday_int = ?', wday)
-      ranges.each do |range|
+      sorted_ranges = ranges.sort { |a, b| a.start_time_seconds <=> b.start_time_seconds }
+      sorted_ranges.each do |range|
         output[wday] << [range.start_time_seconds, range.end_time_seconds]
       end
     end

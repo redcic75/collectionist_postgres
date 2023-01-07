@@ -9,11 +9,11 @@ range1:
 range2:
   shop: shop1
   weekday_int: 3
-  start_time_seconds: 32400
-  end_time_seconds: 43200
+  start_time_seconds: 52200
+  end_time_seconds: 64800
 
 range3:
   shop: shop1
   weekday_int: 3
-  start_time_seconds: 52200
-  end_time_seconds: 64800
+  start_time_seconds: 32400
+  end_time_seconds: 43200

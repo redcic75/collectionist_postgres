@@ -23,15 +23,15 @@ OpeningRange.create!(
 OpeningRange.create!(
   shop: bakery,
   weekday_int: 3,
-  start_time_seconds: 32_400,
-  end_time_seconds: 43_200
+  start_time_seconds: 52_200,
+  end_time_seconds: 64_800
 )
 
 OpeningRange.create!(
   shop: bakery,
   weekday_int: 3,
-  start_time_seconds: 52_200,
-  end_time_seconds: 64_800
+  start_time_seconds: 32_400,
+  end_time_seconds: 43_200
 )
 
 OpeningRange.create!(
