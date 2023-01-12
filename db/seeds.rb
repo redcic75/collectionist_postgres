@@ -16,99 +16,99 @@ puts 'Creating opening ranges...'
 OpeningRange.create!(
   shop: bakery,
   weekday_int: 2,
-  start_time_seconds: 21_600,
-  end_time_seconds: 43_200
+  start_time: Time.find_zone('UTC').parse('9:00'),
+  end_time: Time.find_zone('UTC').parse('12:00')
 )
 
 OpeningRange.create!(
   shop: bakery,
   weekday_int: 3,
-  start_time_seconds: 52_200,
-  end_time_seconds: 64_800
+  start_time: Time.find_zone('UTC').parse('14:30'),
+  end_time: Time.find_zone('UTC').parse('18:00')
 )
 
 OpeningRange.create!(
   shop: bakery,
   weekday_int: 3,
-  start_time_seconds: 32_400,
-  end_time_seconds: 43_200
+  start_time: Time.find_zone('UTC').parse('9:00'),
+  end_time: Time.find_zone('UTC').parse('12:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 1,
-  start_time_seconds: 37_800,
-  end_time_seconds: 54_000
+  start_time: Time.find_zone('UTC').parse('10:30'),
+  end_time: Time.find_zone('UTC').parse('15:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 1,
-  start_time_seconds: 61_200,
-  end_time_seconds: 72_000
+  start_time: Time.find_zone('UTC').parse('17:00'),
+  end_time: Time.find_zone('UTC').parse('20:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 2,
-  start_time_seconds: 37_800,
-  end_time_seconds: 54_000
+  start_time: Time.find_zone('UTC').parse('17:00'),
+  end_time: Time.find_zone('UTC').parse('20:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 2,
-  start_time_seconds: 61_200,
-  end_time_seconds: 72_000
+  start_time: Time.find_zone('UTC').parse('10:30'),
+  end_time: Time.find_zone('UTC').parse('15:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 3,
-  start_time_seconds: 37_800,
-  end_time_seconds: 54_000
+  start_time: Time.find_zone('UTC').parse('10:30'),
+  end_time: Time.find_zone('UTC').parse('15:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 3,
-  start_time_seconds: 61_200,
-  end_time_seconds: 72_000
+  start_time: Time.find_zone('UTC').parse('17:00'),
+  end_time: Time.find_zone('UTC').parse('20:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 4,
-  start_time_seconds: 37_800,
-  end_time_seconds: 54_000
+  start_time: Time.find_zone('UTC').parse('10:30'),
+  end_time: Time.find_zone('UTC').parse('15:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 4,
-  start_time_seconds: 61_200,
-  end_time_seconds: 72_000
+  start_time: Time.find_zone('UTC').parse('17:00'),
+  end_time: Time.find_zone('UTC').parse('20:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 5,
-  start_time_seconds: 37_800,
-  end_time_seconds: 54_000
+  start_time: Time.find_zone('UTC').parse('10:30'),
+  end_time: Time.find_zone('UTC').parse('15:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 5,
-  start_time_seconds: 61_200,
-  end_time_seconds: 72_000
+  start_time: Time.find_zone('UTC').parse('17:00'),
+  end_time: Time.find_zone('UTC').parse('20:00')
 )
 
 OpeningRange.create!(
   shop: butcher,
   weekday_int: 6,
-  start_time_seconds: 37_800,
-  end_time_seconds: 72_000
+  start_time: Time.find_zone('UTC').parse('10:30'),
+  end_time: Time.find_zone('UTC').parse('20:00')
 )
 
 puts 'Seed finished'
