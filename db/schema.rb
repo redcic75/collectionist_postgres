@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_06_083605) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_12_130347) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "opening_ranges", force: :cascade do |t|
     t.bigint "shop_id", null: false
     t.integer "weekday_int"
-    t.integer "start_time_seconds"
-    t.integer "end_time_seconds"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.time "start_time"
+    t.time "end_time"
     t.index ["shop_id"], name: "index_opening_ranges_on_shop_id"
   end
 
