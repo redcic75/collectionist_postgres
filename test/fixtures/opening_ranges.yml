@@ -3,17 +3,17 @@
 range1:
   shop: shop1
   weekday_int: 2
-  start_time_seconds: 21600
-  end_time_seconds: 43200
+  start_time: <%= Time.find_zone('UTC').parse('6:00') %>
+  end_time: <%= Time.find_zone('UTC').parse('12:00') %>
 
 range2:
   shop: shop1
   weekday_int: 3
-  start_time_seconds: 52200
-  end_time_seconds: 64800
+  start_time: <%= Time.find_zone('UTC').parse('14:30') %>
+  end_time: <%= Time.find_zone('UTC').parse('18:00') %>
 
 range3:
   shop: shop1
   weekday_int: 3
-  start_time_seconds: 32400
-  end_time_seconds: 43200
+  start_time: <%= Time.find_zone('UTC').parse('9:00') %>
+  end_time: <%= Time.find_zone('UTC').parse('12:00') %>
