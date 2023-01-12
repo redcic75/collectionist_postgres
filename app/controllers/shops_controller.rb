@@ -5,6 +5,7 @@ class ShopsController < ApplicationController
 
   def show
     @shop = Shop.find(params[:id])
-    @week_openings = @shop.week_openings
+    @current_wday = Time.now.utc.wday
+    @week_openings = @shop.week_openings(@current_wday)
   end
 end

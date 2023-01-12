@@ -1,18 +1,12 @@
 <h1><%= @shop.name %></h1>
-<%# current_wday represents the current day of the week.
-current_wday belongs to (0..6)
-0 for sunday, 1 for  monday... 6 for saturday  %>
-<% current_wday = Time.now.utc.wday %>
 <table>
-  <% (current_wday..current_wday + 6).each do |index| %>
-    <% wday = index % 7 %>
-    <% day_openings = @week_openings[wday] %>
-    <tr class="<%= 'bold' if index == current_wday %>">
+  <% @week_openings.each_with_index do |day_openings, index| %>
+    <tr class="<%= 'bold' if index == 0 %>">
       <th>
-        <%= t('schedule') if index == current_wday %>
+        <%= t('schedule') if index == 0 %>
       </th>
       <td>
-        <%= t("day#{wday}") %>
+        <%= t("day#{(@current_wday + index) % 7}") %>
       </td>
       <td>
         <% if day_openings.size == 0 %>
